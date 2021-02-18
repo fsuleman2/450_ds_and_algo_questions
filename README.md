@@ -1,5 +1,5 @@
 # 450_ds-algo_question
-### 1. Write a C++ program to reverse an array
+### 1(a). Write a C++ program to reverse an array
 ```c++
 #include<iostream>
 #include<stdio.h>
@@ -48,5 +48,30 @@ int main()
     printArray(a,n);
     return 0;
 
+}
+```
+<hr>
+
+### 1(b). Write a C++ program to reverse a string
+```c++
+#include<iostream>
+#include<stdio.h>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    string str;
+    cin>>str;
+    reverse(str.begin(),str.end());
+    cout<<str;
+    /*Manual way to do it
+    int len = size(str);
+    for(int i=len;i>=0;i--)
+    {
+        cout<<str[i];
+    }
+    */
+    return 0;
 }
 ```
