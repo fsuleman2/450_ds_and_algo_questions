@@ -75,3 +75,57 @@ int main()
     return 0;
 }
 ```
+<hr>
+
+### 2(a). Write a C++ program to find min and max element in an array
+```c++
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int arr[] = {1000, 11, 445,199,330,300};
+  int len = size(arr);
+  int max=0;
+  for(int i=0; i<len ; i++)
+  {
+    if(arr[i]>max)
+    {
+      max=arr[i];
+    }
+  }
+  int min=max;
+  for(int i=0;i<len;i++)
+  {
+    if(arr[i]<min)
+    {
+      min= arr[i];
+    }
+  }
+  cout<<"Maximum Element "<<max<<endl;
+  cout<<"Minimum Element "<<min;
+}
+```
+<hr>
+
+### 2(b). Write a C++ program to find middle of Three
+```c++
+#include<iostream.h>
+#include<stdio.h>
+int main()
+{
+    int A,B,C;
+    cin>>A;
+    cin>>B;
+    cin>>C;
+    if((A<B && A>C) || (A>B && A<C) ){
+        return A;
+    }
+    else if((B>A && B<C) || (B<A && B>C)){
+        return B;
+    }
+    else{
+        return C;
+    }
+}
+```
