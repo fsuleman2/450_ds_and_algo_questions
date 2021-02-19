@@ -1,10 +1,12 @@
-# 450_ds-algo_question
+# 450_ds-algo_question :rocket:
 ### 1(a). Write a C++ program to reverse an array
 ```c++
 #include<iostream>
 #include<stdio.h>
 #include<bits/stdc++.h>
 using namespace std;
+
+//Function for reversing
 int reverse_array(int a[],int n)
 {
     int temp;
@@ -128,4 +130,27 @@ int main()
         return C;
     }
 }
+```
+<hr>
+
+### 3. Write a program to find kth min element in the array
+```python
+def kthSmallest_element(arr,k):
+    arr.sort()
+    return arr[k-1]
+#Driver code
+#number of elements in the array/list
+n= int(input())
+arr = []
+for i in range(n):
+    ins =int(input())
+    arr.append(ins)
+k = int(input("enter key"))
+print(kthSmallest_element(arr,k))
+
+# Input:
+> n = 6
+> arr[] = 7 10 4 3 20 15
+> k = 3
+# Output: 7
 ```
